@@ -16,7 +16,7 @@ export default function SearlesBlog() {
 
         <div className="relative h-[400px] mb-8 rounded-lg overflow-hidden">
           <Image
-            src="/blog/psychology.jpg"
+            src="/blog_image.jpg"
             alt="Psychological concepts"
             fill
             className="object-cover"
