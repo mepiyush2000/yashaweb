@@ -189,5 +189,14 @@ const blogPosts = [
     readTime: "6 min read",
     image: "/blog_image.jpg",
     slug: "/blog/coping-with-grief",
+  },
+  {
+    title: "Feeling Like a ‘Child’ in Your Family",
+    excerpt:
+      "A Psychodynamic Look at a Common Struggle",
+    date: "June 8, 2025",
+    readTime: "6 min read",
+    image: "/blog_image.jpg",
+    slug: "/blog/feeling-like-a-child",
   }
 ]; 
