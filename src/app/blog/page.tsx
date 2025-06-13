@@ -6,7 +6,7 @@ export default function Blog() {
   const featuredPost = blogPosts[0];
   
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 overflow-x-hidden">
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Blog</h1>
@@ -82,7 +82,7 @@ export default function Blog() {
       </div>
 
       {/* Newsletter Section */}
-      <div className="mt-16 bg-indigo-50 rounded-lg p-8 text-center">
+      <div className="mt-16 bg-indigo-50 rounded-lg p-4 sm:p-8 text-center">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">
           Subscribe to My Newsletter
         </h2>
@@ -90,15 +90,15 @@ export default function Blog() {
           Get the latest articles and mental health tips delivered to your inbox.
         </p>
         <form className="max-w-md mx-auto">
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
+              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
             />
             <button
               type="submit"
-              className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors"
+              className="w-full sm:w-auto bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors"
             >
               Subscribe
             </button>
