@@ -1,7 +1,41 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { blogPosts } from './blog/page';
+import { useRef } from 'react';
+
+interface BlogPost {
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  image: string;
+  slug: string;
+}
 
 export default function Home() {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const scrollAmount = container.clientWidth;
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const scrollAmount = container.clientWidth;
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  // Get the 3 most recent blog posts
+  const recentPosts = blogPosts.slice(0, 3);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -66,8 +100,153 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Recent Blog Posts Section */}
       <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Insights</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore my recent articles on mental health, relationships, and personal growth.
+            </p>
+          </div>
+          
+          <div className="relative group">
+            {/* Navigation Arrows */}
+            <button
+              onClick={scrollLeft}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Scroll left"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            
+            <button
+              onClick={scrollRight}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Scroll right"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            {/* Scroll Container */}
+            <div 
+              ref={scrollContainerRef}
+              className="flex overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
+            >
+              {blogPosts.map((post, index) => (
+                <div 
+                  key={index} 
+                  className="flex-none w-full md:w-1/2 lg:w-1/3 px-4 snap-start"
+                >
+                  <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                    <div className="relative h-48">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center text-sm text-gray-600 mb-4">
+                        <span>{post.date}</span>
+                        <span className="mx-2">•</span>
+                        <span>{post.readTime}</span>
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                      <Link
+                        href={post.slug}
+                        className="text-indigo-600 font-semibold hover:text-indigo-700 inline-flex items-center"
+                      >
+                        Read More
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Scroll Indicators */}
+            <div className="flex justify-center mt-8 space-x-2">
+              {blogPosts.map((_, index) => (
+                <div
+                  key={index}
+                  className="w-2 h-2 rounded-full bg-gray-300"
+                />
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              href="/blog"
+              className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700"
+            >
+              View All Articles
+              <svg
+                className="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             What My Clients Say
