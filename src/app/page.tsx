@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogPosts } from './blog/page';
+import { blogPosts } from './blog/data';
 import { useRef } from 'react';
 
 interface BlogPost {
