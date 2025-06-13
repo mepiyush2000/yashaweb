@@ -5,8 +5,8 @@ export default function About() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">About Yashasvi Singla</h1>
-        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">About Yashasvi Singla</h1>
+        <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
           A dedicated psychotherapist committed to helping individuals achieve mental wellness and personal growth.
         </p>
       </div>
@@ -22,13 +22,13 @@ export default function About() {
           />
         </div>
         <div>
-          <h2 className="text-3xl font-semibold text-gray-200 mb-6">My Journey</h2>
-          <p className="text-gray-400 mb-4">
+          <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-6">My Journey</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-4">
             With over 8 years of experience in psychotherapy, I have dedicated my career to helping individuals
             navigate through life's challenges and achieve emotional well-being. My approach combines
             evidence-based therapeutic techniques with a deep understanding of human psychology.
           </p>
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-700 dark:text-gray-300 mb-4">
             I believe in creating a safe, non-judgmental space where clients can explore their thoughts,
             feelings, and experiences. My goal is to empower individuals with the tools and insights they
             need to lead more fulfilling lives.
@@ -38,7 +38,7 @@ export default function About() {
 
       {/* Qualifications */}
       <div className="mb-20">
-        <h2 className="text-3xl font-semibold text-gray-200 mb-8 text-center">Qualifications</h2>
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8 text-center">Qualifications</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {qualifications.map((qual, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -51,7 +51,7 @@ export default function About() {
 
       {/* Approach */}
       <div>
-        <h2 className="text-3xl font-semibold text-gray-200 mb-8 text-center">My Approach</h2>
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8 text-center">My Approach</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {approaches.map((approach, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">

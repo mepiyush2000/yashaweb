@@ -13,8 +13,8 @@ export default function FAQs() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">Frequently Asked Questions</h1>
-        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Frequently Asked Questions</h1>
+        <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
           Find answers to common questions about therapy and my practice.
         </p>
       </div>
@@ -63,10 +63,10 @@ export default function FAQs() {
 
       {/* Contact Section */}
       <div className="text-center mt-16">
-        <h2 className="text-2xl font-semibold text-gray-200 mb-4">
+        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
           Still Have Questions?
         </h2>
-        <p className="text-gray-400 mb-8">
+        <p className="text-gray-700 dark:text-gray-300 mb-8">
           Don't hesitate to reach out. I'm here to help you understand how therapy can benefit you.
         </p>
         <a

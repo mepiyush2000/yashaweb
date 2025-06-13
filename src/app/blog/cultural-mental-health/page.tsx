@@ -4,11 +4,11 @@ export default function CulturalMentalHealthBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           The Impact of Cultural Identity on Mental Health
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>April 10, 2025</span>
           <span className="mx-2">•</span>
           <span>7 min read</span>
@@ -23,12 +23,12 @@ export default function CulturalMentalHealthBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             Cultural identity plays a profound role in shaping our mental health and well-being. From the values we hold to the way we express emotions, our cultural background influences every aspect of our psychological experience.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Cultural Values and Mental Health</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Cultural Values and Mental Health</h2>
           <p>
             Different cultures have different views on mental health and emotional expression:
           </p>
@@ -40,7 +40,7 @@ export default function CulturalMentalHealthBlog() {
             <li>Family dynamics and support</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Cultural Identity and Self-Concept</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Cultural Identity and Self-Concept</h2>
           <p>
             Our cultural background shapes how we see ourselves and our place in the world:
           </p>
@@ -52,7 +52,7 @@ export default function CulturalMentalHealthBlog() {
             <li>Personal values and beliefs</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Navigating Cultural Challenges</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Navigating Cultural Challenges</h2>
           <p>
             Living between cultures can present unique challenges to mental health:
           </p>
@@ -64,7 +64,7 @@ export default function CulturalMentalHealthBlog() {
             <li>Discrimination and microaggressions</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Cultural Protective Factors</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Cultural Protective Factors</h2>
           <p>
             Cultural identity can also provide important protective factors for mental health:
           </p>
@@ -76,7 +76,7 @@ export default function CulturalMentalHealthBlog() {
             <li>Spiritual or religious beliefs</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Strategies for Cultural Integration</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Strategies for Cultural Integration</h2>
           <p>
             Finding ways to integrate different cultural aspects can support mental well-being:
           </p>
@@ -88,7 +88,7 @@ export default function CulturalMentalHealthBlog() {
             <li>Creating a personal cultural narrative</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Conclusion: Embracing Cultural Complexity</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Conclusion: Embracing Cultural Complexity</h2>
           <p>
             Understanding the impact of cultural identity on mental health is crucial for both individuals and mental health professionals. By acknowledging and working with cultural factors, we can develop more effective approaches to mental health care and personal well-being.
           </p>

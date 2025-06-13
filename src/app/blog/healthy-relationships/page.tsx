@@ -4,11 +4,11 @@ export default function HealthyRelationshipsBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           Building Healthy Relationships
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>April 20, 2025</span>
           <span className="mx-2">•</span>
           <span>6 min read</span>
@@ -23,12 +23,12 @@ export default function HealthyRelationshipsBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             Healthy relationships are fundamental to our well-being and happiness. Whether they're romantic, familial, or platonic, strong relationships provide support, growth, and fulfillment in our lives.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Key Elements of Healthy Relationships</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Key Elements of Healthy Relationships</h2>
           <p>
             Strong relationships are built on several essential foundations:
           </p>
@@ -40,7 +40,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Emotional support</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Communication Skills</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Communication Skills</h2>
           <p>
             Effective communication is crucial for maintaining healthy relationships:
           </p>
@@ -52,7 +52,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Resolving conflicts constructively</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Setting Boundaries</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Setting Boundaries</h2>
           <p>
             Healthy boundaries are essential for maintaining individual well-being:
           </p>
@@ -64,7 +64,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Adjusting boundaries as needed</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Building Trust</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Building Trust</h2>
           <p>
             Trust is the foundation of any strong relationship:
           </p>
@@ -76,7 +76,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Rebuilding trust when broken</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Maintaining Healthy Relationships</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Maintaining Healthy Relationships</h2>
           <p>
             Long-term relationship health requires ongoing effort:
           </p>
@@ -88,7 +88,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Seeking help when needed</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">When to Seek Help</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">When to Seek Help</h2>
           <p>
             Consider seeking professional support when:
           </p>
@@ -100,7 +100,7 @@ export default function HealthyRelationshipsBlog() {
             <li>Individual or relationship growth is stalled</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Moving Forward</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Moving Forward</h2>
           <p>
             Remember that building and maintaining healthy relationships is a continuous journey. It requires self-awareness, effort, and sometimes professional guidance.
           </p>

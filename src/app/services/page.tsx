@@ -5,8 +5,8 @@ export default function Services() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">My Services</h1>
-        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">My Services</h1>
+        <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
           Comprehensive psychotherapy services tailored to your unique needs and goals.
         </p>
       </div>

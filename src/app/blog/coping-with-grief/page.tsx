@@ -4,11 +4,11 @@ export default function CopingWithGriefBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           Coping with Grief and Loss
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>April 5, 2025</span>
           <span className="mx-2">•</span>
           <span>6 min read</span>
@@ -23,12 +23,12 @@ export default function CopingWithGriefBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             Grief is a natural response to loss, but it can be one of the most challenging emotional experiences we face. Understanding the grieving process and learning healthy ways to cope can help us navigate this difficult journey.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Understanding the Grieving Process</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Understanding the Grieving Process</h2>
           <p>
             Grief is not a linear process, and everyone experiences it differently:
           </p>
@@ -41,7 +41,7 @@ export default function CopingWithGriefBlog() {
             <li>Acceptance and healing</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Common Reactions to Grief</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Common Reactions to Grief</h2>
           <p>
             Grief can manifest in various ways, both emotionally and physically:
           </p>
@@ -54,7 +54,7 @@ export default function CopingWithGriefBlog() {
             <li>Changes in social behavior</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Healthy Coping Strategies</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Healthy Coping Strategies</h2>
           <p>
             There are many ways to cope with grief in a healthy manner:
           </p>
@@ -67,7 +67,7 @@ export default function CopingWithGriefBlog() {
             <li>Seek support from others</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">The Role of Support Systems</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">The Role of Support Systems</h2>
           <p>
             Having a strong support system is crucial during the grieving process:
           </p>
@@ -79,7 +79,7 @@ export default function CopingWithGriefBlog() {
             <li>Spiritual or religious communities</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Self-Care During Grief</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Self-Care During Grief</h2>
           <p>
             Taking care of yourself is essential while grieving:
           </p>
@@ -92,7 +92,7 @@ export default function CopingWithGriefBlog() {
             <li>Engage in activities you enjoy</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">When to Seek Professional Help</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">When to Seek Professional Help</h2>
           <p>
             It's important to recognize when you might need additional support:
           </p>
@@ -105,7 +105,7 @@ export default function CopingWithGriefBlog() {
             <li>Prolonged isolation</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Conclusion: Moving Forward</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Conclusion: Moving Forward</h2>
           <p>
             Grief is a deeply personal experience, and there's no "right" way to grieve. The goal isn't to "get over" your loss, but to learn to live with it in a way that allows you to move forward while honoring your feelings and memories.
           </p>

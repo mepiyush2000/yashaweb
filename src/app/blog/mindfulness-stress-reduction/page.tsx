@@ -4,11 +4,11 @@ export default function MindfulnessBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           The Power of Mindfulness in Stress Reduction
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>April 28, 2025</span>
           <span className="mx-2">•</span>
           <span>4 min read</span>
@@ -23,12 +23,12 @@ export default function MindfulnessBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             In today's fast-paced world, stress has become a common companion in our daily lives. Mindfulness, a practice rooted in ancient traditions, offers powerful tools for managing stress and improving overall well-being.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">What is Mindfulness?</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">What is Mindfulness?</h2>
           <p>
             Mindfulness is the practice of being fully present in the moment, without judgment. It involves:
           </p>
@@ -39,7 +39,7 @@ export default function MindfulnessBlog() {
             <li>Cultivating awareness of body and mind</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Benefits of Mindfulness Practice</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Benefits of Mindfulness Practice</h2>
           <p>
             Regular mindfulness practice can lead to:
           </p>
@@ -51,7 +51,7 @@ export default function MindfulnessBlog() {
             <li>Improved sleep quality</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Simple Mindfulness Techniques</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Simple Mindfulness Techniques</h2>
           <p>
             Here are some easy ways to incorporate mindfulness into your daily life:
           </p>
@@ -63,7 +63,7 @@ export default function MindfulnessBlog() {
             <li>Gratitude practice</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Getting Started with Mindfulness</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Getting Started with Mindfulness</h2>
           <p>
             To begin your mindfulness journey:
           </p>
@@ -75,7 +75,7 @@ export default function MindfulnessBlog() {
             <li>Make it a regular practice</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Mindfulness in Daily Life</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Mindfulness in Daily Life</h2>
           <p>
             You can practice mindfulness throughout your day:
           </p>
@@ -87,7 +87,7 @@ export default function MindfulnessBlog() {
             <li>When experiencing strong emotions</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Moving Forward</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Moving Forward</h2>
           <p>
             Remember that mindfulness is a skill that develops with practice. Start small, be consistent, and notice the positive changes in your stress levels and overall well-being.
           </p>

@@ -4,11 +4,11 @@ export default function HiddenFeelingsBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           Why Do I Feel This Way? Hidden Feelings Beneath the Surface
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>May 5, 2025</span>
           <span className="mx-2">•</span>
           <span>5 min read</span>
@@ -23,12 +23,12 @@ export default function HiddenFeelingsBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             You may look like you're doing just fine — adjusting at work, managing relationships, building a life in a new country. But underneath, there might be a growing sense of being torn between traditional values and modern desires.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">The Hidden Emotional Landscape</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">The Hidden Emotional Landscape</h2>
           <p>
             Many individuals experience complex emotions that they may not fully understand or feel comfortable expressing. These can include:
           </p>
@@ -39,7 +39,7 @@ export default function HiddenFeelingsBlog() {
             <li>Confusion about where you truly belong</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Understanding Your Feelings</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Understanding Your Feelings</h2>
           <p>
             These emotions are valid and often stem from:
           </p>
@@ -50,7 +50,7 @@ export default function HiddenFeelingsBlog() {
             <li>The challenge of balancing multiple identities</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Common Emotional Patterns</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Common Emotional Patterns</h2>
           <p>
             You might notice patterns in your emotional responses:
           </p>
@@ -61,7 +61,7 @@ export default function HiddenFeelingsBlog() {
             <li>Feeling isolated even when surrounded by people</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Navigating These Feelings</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Navigating These Feelings</h2>
           <p>
             Here are some strategies that can help:
           </p>
@@ -72,7 +72,7 @@ export default function HiddenFeelingsBlog() {
             <li>Practice self-compassion and understanding</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">The Role of Therapy</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">The Role of Therapy</h2>
           <p>
             Therapy can provide a supportive environment to:
           </p>
@@ -83,7 +83,7 @@ export default function HiddenFeelingsBlog() {
             <li>Create a more integrated sense of self</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Moving Forward</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Moving Forward</h2>
           <p>
             Remember that your feelings are valid and deserve attention. You don't have to navigate this emotional landscape alone. Therapy can help you understand and work through these complex emotions in a way that honors your unique experience.
           </p>

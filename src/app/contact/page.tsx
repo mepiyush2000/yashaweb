@@ -38,8 +38,8 @@ export default function Contact() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">Contact Me</h1>
-        <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Contact Me</h1>
+        <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
           Get in touch to schedule a session or learn more about my services.
         </p>
       </div>

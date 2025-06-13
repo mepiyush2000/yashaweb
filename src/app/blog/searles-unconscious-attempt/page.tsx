@@ -4,11 +4,11 @@ export default function SearlesBlog() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-200 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
           Searles and the Unconscious Attempt to Drive the Other Person Crazy: What It Means for Children of Psychotic Parents
         </h1>
         
-        <div className="flex items-center text-sm text-gray-400 mb-8">
+        <div className="flex items-center text-sm text-gray-700 dark:text-gray-300 mb-8">
           <span>May 15, 2025</span>
           <span className="mx-2">•</span>
           <span>8 min read</span>
@@ -23,7 +23,7 @@ export default function SearlesBlog() {
           />
         </div>
 
-        <div className="text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             Harold Searles, a key figure in psychoanalysis, introduced the unsettling idea that individuals — especially those with psychotic structures — may unconsciously attempt to "drive the other person crazy." This isn't driven by conscious malice. Rather, it's an attempt to externalize inner fragmentation — to project unbearable confusion or incoherence into another person as a form of psychological survival.
           </p>
@@ -32,7 +32,7 @@ export default function SearlesBlog() {
             When the "other person" is a child living with a psychotic parent, this dynamic can have a long-lasting impact.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">What Happens to the Child?</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">What Happens to the Child?</h2>
           <p>
             Children in such environments often face a reality that feels inconsistent, unpredictable, or emotionally distorted. Their parent may oscillate between affection and paranoia, logic and delusion — often without explanation or acknowledgment.
           </p>
@@ -50,7 +50,7 @@ export default function SearlesBlog() {
             This emotional instability can shape their self-concept, relationships, and worldview in subtle but significant ways.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">The Long-Term Effects in Adulthood</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">The Long-Term Effects in Adulthood</h2>
           <p>
             These children may grow up to become adults who:
           </p>
@@ -65,7 +65,7 @@ export default function SearlesBlog() {
             Searles' concept helps explain why such individuals often feel "crazy" themselves — not because they are mentally ill, but because their reality was distorted by someone who projected their own psychotic experience into them.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Why This Matters in Therapy</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Why This Matters in Therapy</h2>
           <p>
             Unpacking this dynamic in therapy can be incredibly healing. It allows individuals to:
           </p>
@@ -79,7 +79,7 @@ export default function SearlesBlog() {
             This is not about blaming the parent — many psychotic parents love their children deeply. But it is about naming the emotional impact of being raised in an environment where reality itself was unstable.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-200 mt-8 mb-4">Moving Forward</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-4">Moving Forward</h2>
           <p>
             If you resonate with this experience — feeling like your sense of self was shaped in the shadow of a parent's psychological disorganization — therapy can help you make sense of it. Healing begins with recognizing that the chaos you internalized wasn't yours to carry.
           </p>
