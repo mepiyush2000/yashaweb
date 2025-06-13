@@ -24,7 +24,7 @@ Psychodynamic Look at a Common Struggle
           />
         </div>
 
-        <div className="text-gray-700 dark:text-gray-700 dark:text-gray-300 space-y-6">
+        <div className="text-gray-700 dark:text-gray-300 space-y-6">
           <p>
             Have you ever noticed that no matter how grown-up you are, you start feeling like a child again when you are with your family?
 Maybe they still speak to you as if you’re too young to make your own decisions. Or they expect you to behave in a certain way—to be polite,
