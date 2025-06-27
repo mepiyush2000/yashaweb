@@ -68,6 +68,14 @@ const Footer = () => {
                 Instagram
               </a>
               <a
+                href="https://www.youtube.com/@yashasvisingla7323"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                YouTube
+              </a>
+              <a
                 href="https://wa.me/917015246158"
                 target="_blank"
                 rel="noopener noreferrer"
