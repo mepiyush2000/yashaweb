@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blogs</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    .blog { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; }
+    .blog h2 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>Drive Blogs</h1>
+  <div id="blogs">Loading...</div>
+
+  <script>
+    fetch('/blogs')
+      .then(res => res.json())
+      .then(blogs => {
+        const container = document.getElementById('blogs');
+        container.innerHTML = '';
+        blogs.forEach(blog => {
+          const div = document.createElement('div');
+          div.className = 'blog';
+          div.innerHTML = `<h2>${blog.name}</h2><pre>${blog.content}</pre>`;
+          container.appendChild(div);
+        });
+      })
+      .catch(err => {
+        document.getElementById('blogs').innerText = 'Failed to load blogs';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

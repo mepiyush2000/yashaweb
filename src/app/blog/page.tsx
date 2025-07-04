@@ -1,8 +1,26 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { blogPosts } from './data';
+import { db } from '../../../lib/firebase';
+import { collection, getDocs } from 'firebase/firestore';
 
-export default function Blog() {
+type BlogPost = {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  content: string;
+  slug: string;
+};
+
+export default async function Blog() {
+  const snapshot = await getDocs(collection(db, 'blogs'));
+  
+  const blogPosts: BlogPost[] = snapshot.docs.map(doc => ({
+  id: doc.id,
+  ...doc.data(),
+})) as BlogPost[];
+
   const featuredPost = blogPosts[0];
   
   return (
@@ -20,7 +38,7 @@ export default function Blog() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="relative h-[400px]">
             <Image
-              src={featuredPost.image}
+              src="/blog_image.jpg"
               alt={featuredPost.title}
               fill
               className="object-cover"
@@ -54,7 +72,7 @@ export default function Blog() {
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="relative h-48">
               <Image
-                src={post.image}
+                src="/blog_image.jpg"
                 alt={post.title}
                 fill
                 className="object-cover"
