@@ -57,7 +57,7 @@ const Navbar = () => {
               >
                 Admin Login
               </Link>
-            ) : user.email === "anishajindal143@gmail.com" ? (
+            ) : user.email === "admin@gmail.com" ? (
               <>
                 <Link
                   href="/admin"
@@ -130,7 +130,7 @@ const Navbar = () => {
             >
               Admin Login
             </Link>
-          ) : user.email === "anishajindal143@gmail.com" ? (
+          ) : user.email === "admin@gmail.com" ? (
             <>
               <Link
                 href="/admin"
