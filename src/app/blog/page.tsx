@@ -21,7 +21,14 @@ export default async function Blog() {
   ...doc.data(),
 })) as BlogPost[];
 
-  const featuredPost = blogPosts[0];
+  // Sort blog posts by date (newest first)
+  const sortedBlogPosts = [...blogPosts].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  const featuredPost = sortedBlogPosts[0];
   
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 overflow-x-hidden">
@@ -68,7 +75,7 @@ export default async function Blog() {
 
       {/* Blog Posts Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post, index) => (
+        {sortedBlogPosts.slice(1).map((post, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="relative h-48">
               <Image
