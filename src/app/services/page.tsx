@@ -192,17 +192,17 @@ const pricing = [
 
   {
     title: "Individual Session",
-    price: "₹2,000",
+    price: "₹2,500",
     description: "50-minutes one-on-one therapy session for adults",
   },
   {
     title: "Children's Therapy",
-    price: "₹2,500",
+    price: "₹3,000",
     description: "50-minutes specialized session for children",
   },
   {
     title: "Couples/Family Session",
-    price: "₹3,000",
+    price: "₹3,500",
     description: "60-minutes session for couples or families",
   },
 ]; 
