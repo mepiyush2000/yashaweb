@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { blogPosts } from './blog/data';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 interface BlogPost {
   title: string;
@@ -16,6 +16,29 @@ interface BlogPost {
 
 export default function Home() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const videoScrollRef = useRef<HTMLDivElement>(null);
+
+  // YouTube video IDs
+  const videoIds = [
+    'I83kYe1g6ag',
+    'b08oqK8vdDQ',
+    'xMXNpt6Lx80',
+    'lR_bkNW5Bdo',
+    'GncJEBHS204',
+    'Fc_vXdq42ZY',
+    'JU4GJYF6ZLA',
+    's8VcyZxpV1I',
+    'J32obnKjhIA',
+  ];
+
+  // State for shuffled videos
+  const [shuffledVideos, setShuffledVideos] = useState<string[]>([]);
+
+  // Shuffle videos on component mount
+  useEffect(() => {
+    const shuffled = [...videoIds].sort(() => Math.random() - 0.5);
+    setShuffledVideos(shuffled);
+  }, []);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -29,6 +52,22 @@ export default function Home() {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
       const scrollAmount = container.clientWidth;
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  const scrollVideoLeft = () => {
+    if (videoScrollRef.current) {
+      const container = videoScrollRef.current;
+      const scrollAmount = container.clientWidth * 0.8;
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  const scrollVideoRight = () => {
+    if (videoScrollRef.current) {
+      const container = videoScrollRef.current;
+      const scrollAmount = container.clientWidth * 0.8;
       container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
@@ -102,35 +141,81 @@ export default function Home() {
 
       {/* YouTube Video Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Videos</h2>
             <p className="text-xl text-gray-600">
               Watch these insightful videos about mental health and wellness
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* First Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/SPkPBvOEtgc"
-                title="Featured Mental Health Video 1"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-            {/* Second Video */}
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/E4SAXNDn5xI"
-                title="Featured Mental Health Video 2"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          
+          <div className="relative group">
+            {/* Navigation Arrows */}
+            <button
+              onClick={scrollVideoLeft}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Scroll videos left"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            
+            <button
+              onClick={scrollVideoRight}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              aria-label="Scroll videos right"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            {/* Scroll Container */}
+            <div 
+              ref={videoScrollRef}
+              className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory scrollbar-hide"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {shuffledVideos.map((videoId, index) => (
+                <div 
+                  key={videoId}
+                  className="flex-none w-[90%] md:w-[45%] lg:w-[30%] snap-start"
+                >
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      title={`Mental Health Video ${index + 1}`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
