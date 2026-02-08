@@ -17,7 +17,7 @@ export default function Services() {
           <div key={index} className="bg-white p-8 rounded-lg shadow-md">
             <div className="text-indigo-600 mb-4">{service.icon}</div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h2>
-            <p className="text-gray-600 mb-6">{service.description}</p>
+            <p className="text-gray-600 mb-6 whitespace-pre-line">{service.description}</p>
             <ul className="space-y-2 mb-6">
               {service.features.map((feature, idx) => (
                 <li key={idx} className="flex items-center text-gray-600">
@@ -96,12 +96,14 @@ const services = [
     ),
     title: "Individual Therapy",
     description:
-      "One-on-one sessions focused on your personal growth and mental well-being.",
+      "Individual therapy can be helpful if you feel stuck, or caught in patterns that are difficult to change, even when you want things to be different.\n\nIn therapy, we work at a pace that allows concerns to be explored rather than rushed. The focus is on how current difficulties are shaped by emotional patterns, relationships, and earlier experiences.\n\nIndividual therapy can help with:",
     features: [
-      "Personalized treatment plans",
-      "Confidential sessions",
-      "Evidence-based approaches",
-      "Flexible scheduling",
+      "Anxiety - panic attacks, social anxiety, performance anxiety, obsessive compulsive disorder (OCD), generalized anxiety",
+      "Complex trauma and abuse",
+      "Depression",
+      "Personality-related concerns",
+      "Eating disorders",
+      "Bipolar affective disorder",
     ],
   },
   {
@@ -192,17 +194,17 @@ const pricing = [
 
   {
     title: "Individual Session",
-    price: "₹2,500",
+    price: "₹2,000",
     description: "50-minutes one-on-one therapy session for adults",
   },
   {
     title: "Children's Therapy",
-    price: "₹3,000",
+    price: "₹2,000",
     description: "50-minutes specialized session for children",
   },
   {
     title: "Couples/Family Session",
-    price: "₹3,500",
+    price: "₹3,000",
     description: "60-minutes session for couples or families",
   },
 ]; 

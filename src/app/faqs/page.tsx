@@ -84,7 +84,7 @@ const faqs = [
   {
     question: "What can I expect in the initial consultation?",
     answer:
-      "The first four sessions are consultation sessions. During this time, I try to understand the history, life context, and emotional landscape you come from. These sessions allow us to explore your concerns in depth and help me assess what kind of support may be most helpful—whether that's ongoing therapy, a referral for psychiatric evaluation, or another form of care. It's also a space for you to see if I feel like the right fit for you as a therapist. Therapy works best when there's mutual trust and comfort, and these early sessions give both of us time to understand if we can build that together.",
+      "Your first consultation is a space to explore your concerns in depth. Together, we'll look at your history, life context, and emotional experiences to understand the challenges you're facing. These sessions allow us to explore your concerns in depth and help me assess what kind of support may be most helpful—whether that's ongoing therapy, a referral for psychiatric evaluation, or another form of care. It's also a space for you to see if I feel like the right fit for you as a therapist. Therapy works best when there's mutual trust and comfort, and these early sessions give both of us time to understand if we can build that together.",
   },
   {
     question: "What issues can I bring to therapy?",

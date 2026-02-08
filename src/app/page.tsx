@@ -99,18 +99,23 @@ export default function Home() {
                   href="/services"
                   className="bg-white text-indigo-600 px-6 py-3 rounded-md border border-indigo-600 hover:bg-indigo-50 transition-colors"
                 >
-                  Learn More
+                  Services
                 </Link>
               </div>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/my_image.jpg"
-                alt="Yashasvi Singla"
-                fill
-                className="object-cover"
-                priority
-              />
+            <div>
+              <div className="relative h-[400px] rounded-lg overflow-hidden">
+                <Image
+                  src="/my_image.jpg"
+                  alt="Yashasvi Singla"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <p className="text-center text-lg font-semibold text-gray-700 mt-4">
+                Clinical Psychologist | Psychotherapist
+              </p>
             </div>
           </div>
         </div>
@@ -459,11 +464,11 @@ const testimonials = [
   {
     quote:
       "Yashasvi has been instrumental in helping me navigate through my anxiety. Her approach is both professional and compassionate.",
-    name: "Client A",
+    name: "Piyush M*****",
   },
   {
     quote:
       "The sessions have been transformative. I've learned valuable coping mechanisms that have significantly improved my daily life.",
-    name: "Client B",
+    name: "Kritika A****",
   },
 ];

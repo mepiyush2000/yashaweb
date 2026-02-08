@@ -168,9 +168,8 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-medium text-gray-900 mb-2">Locations</h3>
                 <p className="text-gray-600">
-                  Noida<br />
-                  Gurgaon<br />
-                  Pitampura (on a visit-only basis)<br />
+                  Sec 45, Gurgaon<br />
+                  Rohini (on a visit-only basis)<br />
                   Online sessions available for Indian and international clients
                 </p>
               </div>

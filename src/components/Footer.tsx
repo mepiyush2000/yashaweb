@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="text-gray-600">Email: yashasvi.singla21@gmail.com</p>
               <p className="text-gray-600">WhatsApp: +91 7015246158</p>
-              <p className="text-gray-600">Location: New Delhi, India</p>
+              <p className="text-gray-600">Location: Sec 45, Gurgaon</p>
             </div>
           </div>
 

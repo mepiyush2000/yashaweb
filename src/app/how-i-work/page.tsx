@@ -49,9 +49,8 @@ export default function HowIWork() {
             <h3 className="text-xl font-semibold text-gray-400 mb-4">In-Person Sessions</h3>
             <p>I offer in-person sessions at the following locations:</p>
             <ul className="list-disc list-inside space-y-2">
-              <li>Noida</li>
-              <li>Gurgaon</li>
-              <li>Pitampura (on a visit-only basis)</li>
+              <li>Sec 45, Gurgaon</li>
+              <li>Rohini (on a visit-only basis)</li>
             </ul>
             <p>
               In addition, I provide online sessions for both Indian and international clients.
