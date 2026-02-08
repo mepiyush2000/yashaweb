@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Yashasvi Singla" }],
   creator: "Yashasvi Singla",
   publisher: "Yashasvi Singla",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logo.png',
+  },
   formatDetection: {
     email: false,
     address: false,
