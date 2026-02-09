@@ -31,11 +31,20 @@ export const metadata: Metadata = {
     siteName: "Yashasvi Singla - Psychotherapist",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Yashasvi Singla - Psychotherapist',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Yashasvi Singla - Professional Psychotherapist",
     description: "Expert psychotherapy services by Yashasvi Singla. Specializing in mental health, counseling, and personal development.",
+    images: ['/logo.png'],
   },
   robots: {
     index: true,
